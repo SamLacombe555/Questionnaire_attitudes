@@ -75,12 +75,17 @@ if __name__ == "__main__":
 
     age = int(input("Êtes-vous un étudiant âgé entre 18 et 25 ans?\n1- Oui\n0- Non"))
     if age == 1:
-        genre = int(input())
-
+        genre = int(input("Quelle est votre genre?\n2- Garçon\n1- Fille\n0- Autres/Préfère ne pas dire"))
+        if genre != (1 or 2):
+            genre = 0
+    else:
+        genre = 0
     for question, reponse in dict_questions.items():
         print(f"{question} = {reponse}")
 
 
     print(f"\nTotal Réussite = {valeur_reussite} \nTotal Dépendance = {valeur_dependance} \nTotal Autocontrôle = {valeur_autocontrole}")
 
-    if
+    if genre != 0:
+        if genre == 1:
+            if genre =
