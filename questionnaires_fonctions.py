@@ -1,35 +1,37 @@
+
+"""
 def q_1():
-    return int(input("Si j'échoue en partie, c'est aussi pire que d'échouer complètement."))
+    print("Si j'échoue en partie, c'est aussi pire que d'échouer complètement."))
 
 def q_2():
-    return int(input("Si tu déplais aux autres, tu ne peux être heureux(se)."))
+    print("Si tu déplais aux autres, tu ne peux être heureux(se)."))
 
 def q_3():
-    return int(input("Je devrais être heureux(se) tout le temps."))
+    print("Je devrais être heureux(se) tout le temps."))
 
 def q_4():
-    return int(input("Les gens auront probablement une moins bonne opinion de moi si je fais une erreur."))
+    print("Les gens auront probablement une moins bonne opinion de moi si je fais une erreur."))
 
 def q_5():
-    return int(input("Mon bonheur dépend plus des autres que de moi."))
+    print("Mon bonheur dépend plus des autres que de moi."))
 
 def q_6():
-    return int(input("Je devrais toujours contrôler totalement mes émotions."))
+    print("Je devrais toujours contrôler totalement mes émotions."))
 
 def q_7():
-    return int(input("Ma vie est gâchée si je n’ai pas de succès."))
+    print("Ma vie est gâchée si je n’ai pas de succès."))
 
 def q_8():
-    return int(input("Ce que les gens pensent de moi est très important."))
+    print("Ce que les gens pensent de moi est très important."))
 
 def q_9():
-    return int(input("Je devrais être capable de résoudre mes problèmes rapidement et sans gros effort."))
+    print("Je devrais être capable de résoudre mes problèmes rapidement et sans gros effort."))
 
 def q_10():
-    return int(input("Si je ne me fixe pas les buts les plus élevés, je risque de devenir un(e) raté(e)."))
+    print("Si je ne me fixe pas les buts les plus élevés, je risque de devenir un(e) raté(e)."))
 
 def q_11():
-    return int(input("Je ne suis rien si une personne que j’aime ne m’aime pas."))
+    print("Je ne suis rien si une personne que j’aime ne m’aime pas."))
 
 def q_12():
     return int(input("Une personne devrait être capable de contrôler ce qui lui arrive."))
@@ -69,9 +71,10 @@ def q_23():
 
 def q_24():
     return int(input("Chaque fois que je prends un risque, je ne fais que me causer des ennuis."))
+"""
 
-def reponses():
-    print("7- Complètement d'accord \n6- Très d'accord \n5- Un peu d'accord \n4- Neutre \n3- Un peu en désaccord \n2- Très en désaccord \n1- Complètement en désaccord")
+def reponses_possibles():
+    print("\n7- Complètement d'accord \n6- Très d'accord \n5- Un peu d'accord \n4- Neutre \n3- Un peu en désaccord \n2- Très en désaccord \n1- Complètement en désaccord\n")
 
 def inversement(valeur : int):
     return 8 - valeur
@@ -79,3 +82,9 @@ def inversement(valeur : int):
 def consignes():
     print("Ce questionnaire présente la liste de différentes attitudes ou opinions que les gens ont parfois. \nLis attentivement CHAQUE énoncé et décide jusqu’à quel point tu es en accord ou en désaccord avec l’énoncé. \n")
     print("Pour chacune de ces attitudes, indique ta réponse en plaçant un X sous la colonne qui DÉCRIT LE MIEUX CE QUE TU PENSES. \nSois certain(e) de choisir seulement une réponse pour chaque attitude. Puisque les gens sont différents, il n’y a pas de bonnes ou de mauvaises réponses à ces énoncés. \nPour décider si une attitude donnée est typique de ta façon de voir les choses, garde simplement en tête ce que tu es la plupart du temps. ")
+
+#def ajoute_list_attitudes(list_attitudes,attitudes_indice, reponse):
+ #   list_attitudes[attitudes_indice] = reponse
+  #  list_attitudes
+
+#list_questions = [q_1(),q_2(),q_3(),q_4(),q_5(),q_6(),q_7(),q_8(),q_9(),q_10(),q_11(),q_12(),q_13(),q_14(),q_15(),q_16(),q_17(),q_18(),q_19(),q_20(),q_21(),q_22(),q_23(),q_24()]
