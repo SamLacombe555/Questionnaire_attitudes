@@ -70,3 +70,12 @@ def q_23():
 def q_24():
     return int(input("Chaque fois que je prends un risque, je ne fais que me causer des ennuis."))
 
+def reponses():
+    print("7- Complètement d'accord \n6- Très d'accord \n5- Un peu d'accord \n4- Neutre \n3- Un peu en désaccord \n2- Très en désaccord \n1- Complètement en désaccord")
+
+def inversement(valeur : int):
+    return 8 - valeur
+
+def consignes():
+    print("Ce questionnaire présente la liste de différentes attitudes ou opinions que les gens ont parfois. \nLis attentivement CHAQUE énoncé et décide jusqu’à quel point tu es en accord ou en désaccord avec l’énoncé. \n")
+    print("Pour chacune de ces attitudes, indique ta réponse en plaçant un X sous la colonne qui DÉCRIT LE MIEUX CE QUE TU PENSES. \nSois certain(e) de choisir seulement une réponse pour chaque attitude. Puisque les gens sont différents, il n’y a pas de bonnes ou de mauvaises réponses à ces énoncés. \nPour décider si une attitude donnée est typique de ta façon de voir les choses, garde simplement en tête ce que tu es la plupart du temps. ")
