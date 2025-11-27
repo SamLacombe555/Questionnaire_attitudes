@@ -14,7 +14,9 @@ with open("demo_liste_3.txt", "w") as f:
 # 2. Dictionnaire simple
 capitales = {"France": "Paris", "Canada": "Ottawa", "Japon": "Tokyo"}
 
-
+with open("demo_dict.txt", "w") as f:
+    for key, value in capitales.items():
+        f.write(key + " : " + value + "\n")
 
 # 3. Liste 2D (ex: grille)
 notes = [
