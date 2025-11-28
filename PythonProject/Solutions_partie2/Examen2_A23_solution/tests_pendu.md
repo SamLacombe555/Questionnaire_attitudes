@@ -1,0 +1,9 @@
+| # | Type d’erreur | Test qui la révèle                  | Cause                                               | Correction                                      | Message de commit                           |
+| - | ------------- | ----------------------------------- | --------------------------------------------------- | ----------------------------------------------- | ------------------------------------------- |
+| 1 | Syntaxe       | Lancement direct → crash            | `while True` sans `:`                               | Ajout du `:`                                    | `Fix: ajout du : après while True`          |
+| 2 | Syntaxe       | Lancement direct → crash            | Mauvaise indentation du `print` dans le `if`        | Indentation corrigée                            | `Fix: indentation print dans condition`     |
+| 3 | Syntaxe       | Lancement direct → crash            | `if __name__ = "__main__":`                         | Remplacer `=` par `==`                          | `Fix: correction de __name__ == "__main__"` |
+| 4 | Exécution     | Crash à la 1re mauvaise lettre      | Variable `essais` non définie                       | Ajout `essais = 0`                              | `Fix: initialisation de essais`             |
+| 5 | Logique       | Entrée invalide acceptée            | Condition `if lettre.isalpha() or len(lettre) != 1` | Remplacé par `not lettre.isalpha() or len(...)` | `Fix: correction validation d’entrée`       |
+| 6 | Logique       | Victoire annoncée au mauvais moment | Mauvaise condition : `_ in ...` au lieu de `not in` | Remplacement de la condition                    | `Fix: condition de victoire corrigée`       |
+| 7 | Logique       | Sortie jamais atteinte en victoire  | Manque `break` après victoire                       | Ajout du `break`                                | `Fix: ajout break après victoire`           |
