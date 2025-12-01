@@ -1,8 +1,9 @@
-# 1. Liste simple
 import csv
 import json
 
 import notes
+# 1. Liste simple
+
 
 fruits = ["Pomme", "Banane", "Orange"]
 with open("fruits.csv", "w") as fichier:
@@ -31,6 +32,7 @@ with open("demo_dict.txt", "w") as f:
     for key, value in capitales.items():
         f.write(key + " : " + value + "\n")
 
+#with open("capitales.json", "w")
 
 # 3. Liste 2D (ex: grille)
 notes = [
@@ -47,6 +49,8 @@ with open("demo_notes.txt", "w") as f:
     for ls_note in notes:
         f.write("\n")
 
+with open("notes.json", "w", newline="") as f:
+    json.dump(notes, f, ensure_ascii=False, indent=4)
 
 # 4. Liste de dictionnaires (ex: élèves)
 eleves = [
@@ -59,6 +63,9 @@ with open("eleves.csv", "w", encoding="utf-8", newline="") as fichier:
     writer = csv.DictWriter(fichier, fieldnames=eleves[0].keys())
     writer.writeheader()
     writer.writerows(eleves)
+
+with open("eleves.json", "w", encoding="utf-8", newline="") as f:
+    json.dump(eleves, f, ensure_ascii=False, indent=4)
 
 # 5. Dictionnaire de listes (ex: matières -> notes)
 bulletins = {
