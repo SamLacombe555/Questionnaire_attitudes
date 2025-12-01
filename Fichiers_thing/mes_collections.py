@@ -1,5 +1,14 @@
 # 1. Liste simple
+import csv
+
+import notes
+
 fruits = ["Pomme", "Banane", "Orange"]
+with open("fruits.csv", "w") as fichier:
+    writer = csv.writer(fichier)
+    writer.writerow(fruits)
+
+
 
 with open("demo_liste.txt", "w") as f:
     f.writelines(fruits)
@@ -14,6 +23,11 @@ with open("demo_liste_3.txt", "w") as f:
 # 2. Dictionnaire simple
 capitales = {"France": "Paris", "Canada": "Ottawa", "Japon": "Tokyo"}
 
+with open("capitales.csv", "w", newline="") as fichier:
+    writer = csv.DictWriter(fichier, fieldnames=capitales.keys())
+    writer.writeheader()
+    writer.writerow(capitales)
+
 with open("demo_dict.txt", "w") as f:
     for key, value in capitales.items():
         f.write(key + " : " + value + "\n")
@@ -25,7 +39,12 @@ notes = [
     [19, 11, 16]
 ]
 
+with open("notes.csv", "w", newline="") as fichier:
+    writer =csv.writer(fichier)
+    writer.writerows(notes)
 
+#with open("demo_notes.txt", "w") as f:
+#    for ls_note in notes:
 
 # 4. Liste de dictionnaires (ex: élèves)
 eleves = [
