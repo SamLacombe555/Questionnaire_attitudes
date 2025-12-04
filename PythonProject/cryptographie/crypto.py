@@ -1,4 +1,8 @@
 import hashlib
+
+from Exercice_analyse_statistiques.analyse_statistiques.gestion_fichiers import sauvegarder_resultats_csv
+
+
 def hasher_mots(mots: list[str]) -> dict:
     """
     Fonction qui reçoit une liste de mots et qui génère les hash md5, sha256 et sha512 de chaque mot à
@@ -66,6 +70,14 @@ def chiffrement_cesar(chaine: str, nb_cesar: int) -> str:
         chaine_chiffree += lettre
     return chaine_chiffree
 
+#def sauvegarder(dict_mots_passes: dict) -> None:
+ #   """
+  #  Fonction pour sauvegarder un dictionnaire de mots de passes avec ses hash
+   # :param dict_mots_passes: dictionnaire contenant les mots de passes et leur listes de hash
+    #"""
+    #with open("mots_passes.json", "w", encoding="utf-8")
+
+def sauvergarder_mots_passes():
 
 if __name__ == '__main__':
 
